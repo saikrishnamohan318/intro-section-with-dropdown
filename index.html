@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&family=Merriweather:ital,wght@1,300&family=Quicksand:wght@600&family=Rubik:wght@300&family=The+Nautigal:wght@700&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm">
+    <!-- Brand/logo -->
+    <h1><strong>snap</strong></h1>
+    
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Features
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#"><img src="./images/icon-todo.svg" alt="todo"><strong>Todo List</strong></a></li>
+            <li><a href="#"><img src="./images/icon-calendar.svg" alt="calender"><strong>Calender</strong></a></li>
+            <li><a href="#"><img src="./images/icon-reminders.svg" alt="reminders"><strong>Reminders</strong></a></li>
+            <li><a href="#"><img src="./images/icon-planning.svg" alt="planning"><strong>Planning</strong></a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Company
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a class="content" href="#"><strong>History</strong></a></li>
+            <li><a class="content" href="#"><strong>Our Team</strong></a></li>
+            <li><a class="content" href="#"><strong>Blog</strong></a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Careers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+    <div class="navbar-nav ml-auto">
+      <a class="nav-link" href="#" style="float: right;">Login</a>
+      <a class="nav-link register" style="padding-left: 20px; padding-right: 20px;" href="#">Register</a>
+    </div>
+  </nav>
+  <div class="grid-container">
+    <div class="content">
+      <h1>Make</h1>
+      <h1>remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+      <button class="button">Learn More</button><br>
+      <img src="./images/client-databiz.svg" alt="databiz">
+      <img src="./images/client-audiophile.svg" alt="audiophile">
+      <img src="./images/client-meet.svg" alt="meet">
+      <img src="./images/client-maker.svg" alt="maker">
+    </div>
+    <div class="image">
+      <img src="./images/image-hero-desktop.png" alt="hero">
+    </div>
+  </div>  
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body>
+</html>
